@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procco code</title>
+    <link rel="icon" href="../img/VirusFavicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="..//css/admin.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="..//html/index.html">
+            <img src="..//img/VirusFavicon.png" width="30" height="30" class="d-inline-block align-top"
+                alt="logo Procco code">
+            Procco code
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_comand"
+            aria-controls="nav_comand" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav_comand">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link disabled" href="#">Administrativo </a>
+                </li>
+            </ul>
+            <a class="btn btn-dark" href="..//html/index.html" role="button">Logout</a>
+
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Controle de inscrições</h3>
+                    <div class="card-tools">
+                        <div class="input-group input-group-sm card_header_tabela">
+                            <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar"
+                                id="filtra">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body table-responsive p-0 card_body_tabela">
+                    <table class="table table-head-fixed text-nowrap">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Endereço</th>
+                                <th>Cidade</th>
+                                <th>UF</th>
+                                <th>CEP</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelaInscritos">
+                            <tr class="inscrito">
+                                <td class="infoNome">Bruno Diego Lima De Oliveira</td>
+                                <td class="infoEmail">bruno@gmail.com</td>
+                                <td class="infoEndereco">Rua amilton, 25 - Planalto</td>
+                                <td class="infoCidade">Belo Horizonte</td>
+                                <td class="infoUf">MG</td>
+                                <td class="infoCep">12123-123</td>
+                            </tr>
+                            <tr class="inscrito">
+                                <td class="infoNome">Maria Julia Alves</td>
+                                <td class="infoEmail">Maria@gmail.com</td>
+                                <td class="infoEndereco">Av. contorno,356 - Rio Branco</td>
+                                <td class="infoCidade">Belo Horizonte</td>
+                                <td class="infoUf">MG</td>
+                                <td class="infoCep">45668-159</td>
+                            </tr>
+                            <tr class="inscrito">
+                                <td class="infoNome">Ana Beatriz de Souza</td>
+                                <td class="infoEmail">ana@gmail.com</td>
+                                <td class="infoEndereco">Rua amao Azul,15 - Tirou</td>
+                                <td class="infoCidade">Belo Horizonte</td>
+                                <td class="infoUf">MG</td>
+                                <td class="infoCep">78789-789</td>
+                            </tr>
+                            <tr class="inscrito">
+                                <td class="infoNome">Jessica Alves</td>
+                                <td class="infoEmail">jessica@gmail.com</td>
+                                <td class="infoEndereco">Rua Mike Papa, 3456 - Jesus</td>
+                                <td class="infoCidade">Belo Horizonte</td>
+                                <td class="infoUf">MG</td>
+                                <td class="infoCep">15156-156</td>
+                            </tr>
+                            <tr class="inscrito">
+                                <td class="infoNome">Jonathan Alves</td>
+                                <td class="infoEmail">jonathan@gmail.com</td>
+                                <td class="infoEndereco">Av.Jim Doe, 45871 - Lagoa Azul</td>
+                                <td class="infoCidade">Belo Horizonte</td>
+                                <td class="infoUf">MG</td>
+                                <td class="infoCep">15156-156</td>
+                            </tr>
+                            <tr class="inscrito">
+                                <td class="infoNome">Maria do Carmo Simões</td>
+                                <td class="infoEmail">maria_carmo@gmail.com</td>
+                                <td class="infoEndereco">Rua Victoria Régia, 345 - Taquaril</td>
+                                <td class="infoCidade">Belo Horizonte</td>
+                                <td class="infoUf">MG</td>
+                                <td class="infoCep">15156-156</td>
+                            </tr>
+                            <tr class="inscrito">
+                                <td class="infoNome">Richard Tsubaza</td>
+                                <td class="infoEmail">richard_naruturu@gmail.com</td>
+                                <td class="infoEndereco">Rod. Michael Jackson KM 524 Norte - Trevo</td>
+                                <td class="infoCidade">Contagem</td>
+                                <td class="infoUf">MG</td>
+                                <td class="infoCep">15156-156</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card" id="card_form">
+            <div class="card-header">
+                <h3>Inserção manual de dados</h3>
+            </div>
+            <ul id="mensagemErro"></ul>
+            <div class="card-body">
+                <form id="formInsere">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nomeCompleto">Nome</label>
+                            <input type="text" name="nome" class="form-control inputName" id="nomeCompleto"
+                                placeholder="Nome Completo">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email_entrada">Email</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                </div>
+                                <input type="email" name="email" class="form-control" id="email_entrada">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Endereço</label>
+                        <input type="email" name="endereco" class="form-control" id="inputAddress"
+                            placeholder="Rua, Av">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Cidade_entrada">Cidade</label>
+                            <input type="text" name="cidade" class="form-control inputCidade" id="Cidade_entrada">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="entrada_UF">UF</label>
+                            <select id="entrada_UF" name="uf" class="form-control">
+                                <option selected disabled>Escolha um estado</option>
+                                <option>AC</option>
+                                <option>AL</option>
+                                <option>AM</option>
+                                <option>AP</option>
+                                <option>BA</option>
+                                <option>CE</option>
+                                <option>DF</option>
+                                <option>ES</option>
+                                <option>GO</option>
+                                <option>MA</option>
+                                <option>MG</option>
+                                <option>MS</option>
+                                <option>MT</option>
+                                <option>PA</option>
+                                <option>PB</option>
+                                <option>PE</option>
+                                <option>PI</option>
+                                <option>PR</option>
+                                <option>RJ</option>
+                                <option>RN</option>
+                                <option>RO</option>
+                                <option>RR</option>
+                                <option>RS</option>
+                                <option>SC</option>
+                                <option>SE</option>
+                                <option>SP</option>
+                                <option>TO</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="Cep_entrada">CEP</label>
+                            <input type="number" name="cep" class="form-control" min="1" max="99999999"
+                                id="Cep_entrada">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="botaoAdiciona">Adicionar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="fixed-bottom" id=footerIndex>
+        <p>&copy; 2020 Procco Code.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="..//js/addInscrito.js"></script>
+    <script src="..//js/removerInscritos.js"></script>
+    <script src="..//js/filtra.js"></script>
+
+</body>
+
+</html>

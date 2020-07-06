@@ -1,0 +1,35 @@
+#footerIndex {
+    background-color: #343a40;
+    margin-top: 20px;
+    height: 40px;
+    padding-top: 7px;
+    color: white;
+}
+
+#footerIndex p {
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+.card_body_tabela{
+    height: 300px;
+}
+.card_header_tabela{
+    width: 150px;
+}
+#card_form{
+    margin-top: 30px;
+}
+body{
+    margin-bottom: 65px;
+}
+.fadeOut{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.invisivel{
+    display: none;
+}
+.cor{
+    color: red;
+}

@@ -1,0 +1,70 @@
+.cardsInformativo {
+    text-align: justify;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardsInformativoImg {
+    margin-bottom: 20px;
+}
+
+#cardPrevencaoList {
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.embed-responsive {
+    margin-top: 20px;
+}
+
+.carousel {
+    margin-bottom: 20px;
+}
+
+#carouselInfo {
+    height: 70%;
+}
+
+#footerIndex {
+    background-color: #343a40;
+    margin-top: 20px;
+    height: 40px;
+    padding-top: 7px;
+    color: white;
+}
+
+#footerIndex p {
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+#inscricao {
+    margin-top: 20px;
+}
+
+article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#drop_log {
+    display: inline-block;
+}
+.jumbotron{
+    background-color: rgb(84, 152, 207);
+}
+.card-header{
+    
+    background-image: linear-gradient(to bottom right,rgb(84, 152, 207), white);
+}
+
+@media(max-width:425px){
+    body{
+        position: relative;
+        top: 56px;
+    }
+}
